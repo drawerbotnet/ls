@@ -32,7 +32,7 @@ s=requests.Session()
 
 #Получаем хекс лист для обхода
 html=s.get(
-"https://forum.radmir.games/",
+"https://jsc.xnexustesting.eu",
 headers={"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"}
 ).text
 
@@ -52,6 +52,6 @@ s.cookies.set("REACTLABSPROTECTION",resolved_cookie)
 
 #Обходим react.su и получаем нужную нам страницу
 html=s.get(
-"https://forum.radmir.games/",
+"https://jsc.xnexustesting.eu",
 headers={"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"}
 ).text
