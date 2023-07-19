@@ -1,6 +1,5 @@
 import re
 import binascii
-import os
 from Crypto.Cipher import AES
 import requests
 
@@ -44,7 +43,8 @@ print("╩╚═└─┘┴ ┴└─┘ ┴ ")
 print("react bypassed by alikhan barbara")
 
 resolved_cookie = resolve_cookie(html)
-print("cookie:"resolved_cookie)
+print("[!] Cookie found!")
+print(resolved_cookie)
 
 #Подставляем результат в куки
 s.cookies.set("REACTLABSPROTECTION",resolved_cookie)
