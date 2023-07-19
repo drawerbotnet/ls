@@ -37,7 +37,7 @@ headers={"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537
 ).text
 
 #bypassing
-os.system(clear)
+os.system('cls' if os.name == 'nt' else 'clear')
 print("╦═╗┌─┐┌─┐┌─┐┌┬┐")
 print("╠╦╝├┤ ├─┤│   │ ")
 print("╩╚═└─┘┴ ┴└─┘ ┴ ")
