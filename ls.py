@@ -32,7 +32,7 @@ s=requests.Session()
 
 #Получаем хекс лист для обхода
 html=s.get(
-"https://jsc.xnexustesting.eu",
+"https://forum.radmir.games",
 headers={"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"}
 ).text
 
@@ -45,13 +45,13 @@ print("react bypassed by alikhan barbara")
 print(" ")
 
 resolved_cookie = resolve_cookie(html)
-print(resolved_cookie)
+print(f"[!] Cookie found - {resolved_cookie}")
 
 #Подставляем результат в куки
 s.cookies.set("REACTLABSPROTECTION",resolved_cookie)
 
 #Обходим react.su и получаем нужную нам страницу
 html=s.get(
-"https://jsc.xnexustesting.eu",
+"https://forum.radmir.games",
 headers={"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"}
 ).text
