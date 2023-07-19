@@ -1,4 +1,5 @@
 import re
+import os
 import binascii
 from Crypto.Cipher import AES
 import requests
@@ -36,7 +37,7 @@ headers={"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537
 ).text
 
 #bypassing
-system.os("clear")
+os.system(clear)
 print("╦═╗┌─┐┌─┐┌─┐┌┬┐")
 print("╠╦╝├┤ ├─┤│   │ ")
 print("╩╚═└─┘┴ ┴└─┘ ┴ ")
