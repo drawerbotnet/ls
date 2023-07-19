@@ -42,9 +42,9 @@ print("╦═╗┌─┐┌─┐┌─┐┌┬┐")
 print("╠╦╝├┤ ├─┤│   │ ")
 print("╩╚═└─┘┴ ┴└─┘ ┴ ")
 print("react bypassed by alikhan barbara")
+print(" ")
 
 resolved_cookie = resolve_cookie(html)
-print("[!] Cookie found!")
 print(resolved_cookie)
 
 #Подставляем результат в куки
